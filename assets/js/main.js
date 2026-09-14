@@ -185,7 +185,8 @@
         mdDeviceDots = owlCarousel.data('md-device-dots'),
         mouseDrag = owlCarousel.attr('data-mouse-drag') !== 'false',
         touchDrag = owlCarousel.attr('data-touch-drag') !== 'false',
-        pullDrag = owlCarousel.attr('data-pull-drag') !== 'false';
+        pullDrag = owlCarousel.attr('data-pull-drag') !== 'false',
+        mobileMargin = owlCarousel.attr('data-mobile-margin');
         owlCarousel.owlCarousel({
             loop: (loop ? true : false),
             items: (items ? items : 4),
@@ -212,6 +213,7 @@
                     nav: (xsDeviceNav ? true : false),
                     dots: (xsDeviceDots ? true : false),
                     center: false,
+                    margin: (mobileMargin !== null && mobileMargin !== undefined && mobileMargin !== '' ? parseInt(mobileMargin, 10) : (margin ? margin : 0)),
                 },
                 768: {
                     items: (smDevice2 ? smDevice2 : 2),

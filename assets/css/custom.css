@@ -651,8 +651,36 @@ body.why-choose-lightbox-open #scrollUp {
 }
 
 @media (max-width: 767px) {
+  #services.rs-services.services-style2 .container.custom {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #services.rs-services.services-style2 .sec-title2 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   #services.rs-services.services-style2 .rs-carousel {
-    padding: 0 46px;
+    padding: 0;
+    width: 100%;
+  }
+
+  #services.rs-services.services-style2 .owl-nav .owl-prev {
+    left: 10px;
+  }
+
+  #services.rs-services.services-style2 .owl-nav .owl-next,
+  #services.rs-services.services-style2:hover .owl-nav .owl-next {
+    right: 10px;
+    left: auto !important;
+  }
+
+  #services.rs-services.services-style2 .services-slider .services-item {
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
   }
 }
 
