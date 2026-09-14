@@ -681,6 +681,8 @@ body.why-choose-lightbox-open #scrollUp {
     border-radius: 0;
     border-left: 0;
     border-right: 0;
+    padding-left: 72px;
+    padding-right: 72px;
   }
 }
 
