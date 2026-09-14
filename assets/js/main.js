@@ -182,7 +182,10 @@
         centerMode = owlCarousel.data('center-mode'),
         HoverPause = owlCarousel.data('hoverpause'),
         mdDeviceNav = owlCarousel.data('md-device-nav'),
-        mdDeviceDots = owlCarousel.data('md-device-dots');
+        mdDeviceDots = owlCarousel.data('md-device-dots'),
+        mouseDrag = owlCarousel.attr('data-mouse-drag') !== 'false',
+        touchDrag = owlCarousel.attr('data-touch-drag') !== 'false',
+        pullDrag = owlCarousel.attr('data-pull-drag') !== 'false';
         owlCarousel.owlCarousel({
             loop: (loop ? true : false),
             items: (items ? items : 4),
@@ -196,6 +199,10 @@
             smartSpeed: (smartSpeed ? smartSpeed : 250),
             dots: (dots ? true : false),
             nav: (nav ? true : false),
+            mouseDrag: mouseDrag,
+            touchDrag: touchDrag,
+            pullDrag: pullDrag,
+            freeDrag: false,
             navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
             navSpeed: (navSpeed ? true : false),
             responsiveClass: true,
